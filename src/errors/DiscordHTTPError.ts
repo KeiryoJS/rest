@@ -1,9 +1,3 @@
-/*
- * Copyright (c) 2020. MeLike2D All Rights Reserved.
- * Neo is licensed under the MIT License.
- * See the LICENSE file in the project root for more details.
- */
-
 import type { HTTPMethod } from "petitio/dist/lib/PetitioRequest";
 import { STATUS_CODES } from "http";
 
