@@ -1,48 +1,58 @@
 {
-  "compilerOptions": {
-    /* Basic */
-    "lib": ["ESNext"],
-    "target": "ESNext",
-    "module": "CommonJS",
-    "skipLibCheck": true,
+    "compilerOptions": {
+        /* Basic */
+        "lib": [
+            "ES2020",
+//            "ES2020.Array",
+//            "ES2020.AsyncIterable",
+            "ES2020.BigInt",
+            "ES2020.Promise",
+            "ES2020.String",
+//            "ES2020.Symbol"
+        ],
+        "target": "ES2020",
+        "module": "commonjs",
+        "skipLibCheck": true,
 
-    /* Compiling */
-    "inlineSourceMap": false,
-    "declaration": false,
-    "allowJs": true,
-    "rootDir": "./src",
-    "outDir": "./dist",
+        /* Compiling */
+        "inlineSourceMap": false,
+        "declaration": false,
+        "allowJs": true,
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "removeComments": true,
 
-    /* Strict Options */
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictBindCallApply": true,
-    "strictPropertyInitialization": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "pretty": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "importsNotUsedAsValues": "error",
+        /* Strict Options */
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictBindCallApply": true,
+        "strictPropertyInitialization": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "pretty": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "importsNotUsedAsValues": "error",
 
-    /* Types */
-    "types": [ "node" ],
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
+        /* Types */
+        "types": [
+            "node"
+        ],
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node",
 
-    /* Module Resolution */
-    "resolveJsonModule": true,
-    "esModuleInterop": true
-  },
-  "include": [
-    "./src/**/*",
-    "**/*.test.*"
-  ],
-  "exclude": [
-    "./node_modules"
-  ]
+        /* Module Resolution */
+        "resolveJsonModule": true,
+        "esModuleInterop": true
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "./node_modules"
+    ]
 }

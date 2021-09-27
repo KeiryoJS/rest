@@ -1,6 +1,12 @@
-export * from "./errors/DiscordHTTPError";
-export * from "./errors/DiscordAPIError";
+export * from "./errors/http";
+export * from "./errors/api";
 
-export * from "./lib/REST";
-export * from "./lib/Bucket";
-export * from "./lib/CDN";
+export * from "./handler/default/default";
+export * from "./handler/default/bucket";
+export * from "./handler/handler";
+
+export * from "./util/request";
+export * from "./util/constants";
+export { Cdn, CdnOptions, ImageOptions, default as cdn } from "./util/cdn";
+
+export * from "./client";

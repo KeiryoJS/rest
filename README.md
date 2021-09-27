@@ -1,41 +1,36 @@
-<img alt="banner" src="https://repository-images.githubusercontent.com/291619880/8b583d80-eb6d-11ea-8300-3206ef4d5136" />
+# Keiryo REST
 
----
-
-> Simple REST library used within [neocord](https://npmjs.com/neo-cord/neocord)
+> Simple REST library used within [keiryo](https://npmjs.com/KeiryoJS/keiryo)
 
 - [Discord Server](https://discord.gg/5WD9KhF)
-- [GitHub Repository](https://github.com/neo-cord/rest)
+- [GitHub Repository](https://github.com/KeiryoJS/rest)
 
 **node.js v14** or newer is required.
 
 ```shell script
-yarn add @neocord/rest
+yarn add @keiryo/rest
 ```
 
 ## Basic Usage
 
 ```ts
-import { REST } from "@neocord/rest";
-import fetch from "petitio";
+import { RestClient, cdn } from "@keiryo/rest";
+import { request } from "undici";
 
-const api = new REST();
+const api = new RestClient();
 
-// You must set the token if you want to use the RestHandler, cdn doesn't require a authorization.
+// You must set the token if you want to use the RestHandler, cdn doesn't require authorization.
 api.token = "your token here"
 
 // All (iirc) REST routes return JSON, the CDN does not.
-api.queue("/users/@me").then(console.log);
+api.get("/users/@me").then(console.log);
 ...
 
-// If you wanna use the CDN you need to use petitio, or another http client of your choice.
-const defaultAvatar = await fetch(api.cdn.defaultAvatar("5773"));
-console.log(defaultAvatar.body) // => <Buffer 89 50 4e 47...>
+// If you want to use the CDN you need to use petitio, or another http client of your choice.
+const defaultAvatar = await request(cdn.defaultAvatar(5773 % 5));
+const data = await defaultAvatar.body.arrayBuffer();
+console.log(Buffer.from(data)) // => <Buffer 89 50 4e 47...>
 ```
-
-#### Typescript Users
-
-Because we make use of [petitio](https://npmjs.com/petitio) you may have to install [undici](https://npmjs.com/undici) as a development dependency.
 
 ---
 

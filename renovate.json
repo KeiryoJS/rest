@@ -1,6 +1,6 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "commitMessage": ":arrow_up: {{{commitMessagePrefix}}} {{{commitMessageAction}}} {{{commitMessageTopic}}} {{{commitMessageExtra}}} {{{commitMessageSuffix}}}"
+    "extends": [
+        "config:base"
+    ],
+    "commitMessage": ":arrow_up: {{{commitMessagePrefix}}} {{{commitMessageAction}}} {{{commitMessageTopic}}} {{{commitMessageExtra}}} {{{commitMessageSuffix}}}"
 }

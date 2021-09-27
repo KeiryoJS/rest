@@ -1,7 +1,8 @@
 export default {
-  typescript: {
-    rewritePaths: {
-      "src/": "dist/"
+    typescript: {
+        rewritePaths: {
+            "src/": "dist/"
+        },
+        compile: false
     }
-  }
 }
