@@ -5,8 +5,8 @@ export class Cdn {
     static readonly DEFAULTS: Readonly<CdnOptions> = {
         defaultImageFormat: ImageFormat.Png,
         dynamic: true,
-        url: "https://cdn.discordapp.com"
-    }
+        url: "https://cdn.discordapp.com",
+    };
 
     readonly options: CdnOptions;
 
@@ -23,7 +23,7 @@ export class Cdn {
     }
 
     avatar(id: snowflake, hash: string, options: ImageOptions = {}): string {
-        options.dynamic ??= this.options.dynamic;
+        options.dynamic = options.dynamic ?? this.options.dynamic;
         if (options.dynamic && hash.startsWith("a_")) {
             options.format = ImageFormat.Gif;
         }
@@ -52,7 +52,7 @@ export class Cdn {
     }
 
     icon(guild: snowflake, hash: string, options: ImageOptions = {}): string {
-        options.dynamic ??= this.options.dynamic;
+        options.dynamic = options.dynamic ?? this.options.dynamic;
         if (options.dynamic && hash.startsWith("a_")) {
             options.format = ImageFormat.Gif;
         }
@@ -73,8 +73,8 @@ export class Cdn {
             throw new RangeError(`Invalid image size: ${options.size}\nMust be one of ${IMAGE_SIZES.join(", ")}`);
         }
 
-        options.format ??= this.options.defaultImageFormat;
-        options.size ??= this.options.defaultImageSize;
+        options.format = options.format ?? this.options.defaultImageFormat;
+        options.size = options.size ?? this.options.defaultImageSize;
 
         let url = `${this.options.url}${endpoint}.${options.format}`;
         if (options.size) {

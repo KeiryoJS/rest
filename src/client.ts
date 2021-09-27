@@ -70,8 +70,8 @@ export class RestClient extends TypedEmitter<Events> {
             endpoint = `/${endpoint}`;
         }
 
-        options.method ??= HttpMethod.Get;
-        options.headers ??= {};
+        options.method = options.method ?? HttpMethod.Get;
+        options.headers = options.headers ?? {};
 
         let body,
             url = `${this.options.api}/v${this.options.version}${endpoint}`,
