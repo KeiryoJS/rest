@@ -32,7 +32,7 @@ export class DefaultRequestHandler extends TypedEmitter<Events> implements Reque
 
     async queueRequest<T>(request: Request): Promise<T | null> {
         const route = extractRoute(request.endpoint, request.method)
-            , hash = this.hashes.get(`${request.method}:${route.bucket}`) ?? `Global(${request.method}-${route.bucket})`
+            , hash = this.hashes.get(`${request.method}:${route.bucket}`) ?? `Global(${request.method}:${route.bucket})`
             , bucket = this.getBucket(hash, route.majorParameter);
 
         return this.makeRequest(route, bucket, request, this.options.retries);
