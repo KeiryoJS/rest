@@ -41,7 +41,7 @@
     "dependencies": {
         "@keiryo/common": "^1.0.2",
         "abort-controller": "^3.0.0",
-        "discord-api-types": "^0.23.1",
+        "discord-api-types": "^0.37.0",
         "tiny-typed-emitter": "^2.1.0",
         "undici": "^4.7.0"
     }
