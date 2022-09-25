@@ -30,7 +30,7 @@
     "devDependencies": {
         "@ava/typescript": "2.0.0",
         "@keiryo/eslint-config": "^1.0.1",
-        "@types/node": "v14",
+        "@types/node": "14.18.30",
         "@typescript-eslint/eslint-plugin": "4.31.2",
         "@typescript-eslint/parser": "4.31.2",
         "ava": "3.15.0",
