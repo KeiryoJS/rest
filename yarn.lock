@@ -125,14 +125,14 @@
   integrity sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==
 
 "@types/node@v14":
-  version "14.17.19"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.17.19.tgz#7341e9ac1b5d748d7a3ddc04336ed536a6f91c31"
-  integrity sha512-jjYI6NkyfXykucU6ELEoT64QyKOdvaA6enOqKtP4xUsGY0X0ZUZz29fUmrTRo+7v7c6TgDu82q3GHHaCEkqZwA==
+  version "14.18.52"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.52.tgz#214674cbff9f86fad4bf0c25f31ab9b9fa31110f"
+  integrity sha512-DGhiXKOHSFVVm+PJD+9Y0ObxXLeG6qwc0HoOn+ooQKeNNu+T2mEJCM5UBDUREKAggl9MHYjb5E71PAmx6MbzIg==
 
 "@types/normalize-package-data@^2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
-  integrity sha512-f5j5b/Gf71L+dbqxIpQ4Z2WlmI/mPJ0fOkGGmFgtb6sAu97EPczzbS3/tJKxmcYDj55OX6ssqwDAWOHIYDRDGA==
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.1.tgz#d3357479a0fdfdd5907fe67e17e0a85c906e1301"
+  integrity sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==
 
 "@typescript-eslint/eslint-plugin@4.31.2":
   version "4.31.2"
